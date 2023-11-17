@@ -1,0 +1,23 @@
+{
+  "name": "kamarova-cup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fusi0n21/kamarova-cup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fusi0n21/kamarova-cup/issues"
+  },
+  "homepage": "https://github.com/Fusi0n21/kamarova-cup#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2"
+  }
+}
