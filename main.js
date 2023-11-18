@@ -247,7 +247,7 @@ function resetPage(){
 
 const updateElo = async (playerName, newElo) => {
   try {
-    const response = await fetch('http://51.20.130.207/:3000/update-elo', {
+    const response = await fetch('http://51.20.130.207:3000/update-elo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
