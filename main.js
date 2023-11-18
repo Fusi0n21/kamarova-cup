@@ -4,7 +4,7 @@
 
 function renderTable(){
   // Assuming you're working in a browser environment
-  fetch('http://51.20.130.207:3000//data.json')
+  fetch('http://localhost:3000/data.json')
     .then(response => response.json())
     .then(data => {
       // Access the 'people' array in the JSON
@@ -247,7 +247,7 @@ function resetPage(){
 
 const updateElo = async (playerName, newElo) => {
   try {
-    const response = await fetch('http://51.20.130.207:3000/update-elo', {
+    const response = await fetch('http://localhost:3000/update-elo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
