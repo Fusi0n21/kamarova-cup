@@ -1,16 +1,63 @@
 table {
     border-collapse: collapse;
     width: 100%;
+    border: 5px solid black;
   }
   th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
     text-align: left;
     cursor: pointer;
+    padding: 5px; /* Adjust padding as needed */
+    border: 2px solid black;
   }
   th {
     background-color: #f2f2f2;
   }
   tr.selected {
-    background-color: #00a100;
+    background-color: rgb(152,197,62);
   }
+
+  html, body {
+    height: 100vh;
+    margin: 0;
+}
+  body {
+    background-image: url('images/4.png');
+    background-size: 100% 100%; /* Stretch both horizontally and vertically */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+  font-size: 18px;
+}
+
+
+td:first-child {
+  /* Adjust the width of the first column as needed */
+  width: 20px;
+  vertical-align: middle;
+  text-align: center; /* Horizontal alignment to the center */
+}
+
+table {
+
+  background-color: rgba(255, 255, 255, 0.92); /* Adjust the alpha value (0 to 1) for transparency */
+}
+.flexbox{
+  display: flex;
+  justify-content:space-around;
+  padding: 10px;
+}
+#vert{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}

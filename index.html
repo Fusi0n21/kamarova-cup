@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamarova Cup</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-    <link rel="icon" href="/images/favicon.ico">
-  </head>
-<body>
-    <table id="peopleTable">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Elo</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <p>Selected Players: <span id="selectedCount">0</span></p>
-
-
-      <label for="password">Enter Password:</label>
-      <input type="password" id="password" oninput="hashWord()" />
-      <button id="startGameButton" disabled> Start Game</button>
-      <table id="gameTable">
-        <thead>
-          <tr>
-            <th>Role</th>
-            <th>Name</th>
-            <th>Elo</th> 
-            <th>DIF</th>
-            <th>Elo</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kamarova Cup</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+		<link rel="icon" href="/images/favicon.ico">
+	</head>
+	<body>
+		<table id="peopleTable">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Name</th>
+					<th>Elo</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<div class="flexbox">
+			<p>Selected Players: <span id="selectedCount">0</span></p>
+			<div id="vert">
+        <div>
+				<label for="password">Password:</label>
+				<input type="password" id="password" oninput="hashWord()" />
+      </div>
+				<button id="startGameButton" disabled> Start Game</button>
+			</div>
+		</div>
+		<table id="gameTable">
+			<thead>
+				<tr>
+					<th>Role</th>
+					<th>Name</th>
+					<th>Elo</th>
+					<th>DIF</th>
+					<th>Elo</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</body>
 </html>
