@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
     <script src="main.js" defer></script>
-</head>
+  </head>
 <body>
     <table id="peopleTable">
         <thead>
@@ -19,7 +20,11 @@
         <tbody></tbody>
       </table>
       <p>Selected Players: <span id="selectedCount">0</span></p>
-      <button id="startGameButton"> Start Game</button>
+
+
+      <label for="password">Enter Password:</label>
+      <input type="password" id="password" oninput="hashWord()" />
+      <button id="startGameButton" disabled> Start Game</button>
       <table id="gameTable">
         <thead>
           <tr>

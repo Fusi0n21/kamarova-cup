@@ -270,3 +270,24 @@ const updateElo = async (playerName, newElo) => {
 
 
 
+const correctPasswordHash = "f2d07a338c2a7bdc19db6553725dd7f7f5d7a8ab5f2a594b8127aa9d442a31bc";
+
+async function hashWord() {
+  const inputWord = document.getElementById("password").value;
+
+  let inputWordHash = await getSHA256Hash(inputWord)
+  if (inputWordHash === correctPasswordHash) {
+    startGameButton.disabled = false;
+} else {
+    startGameButton.disabled = true;
+}
+}
+const getSHA256Hash = async (input) => {
+  const textAsBuffer = new TextEncoder().encode(input);
+  const hashBuffer = await window.crypto.subtle.digest("SHA-256", textAsBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hash = hashArray
+    .map((item) => item.toString(16).padStart(2, "0"))
+    .join("");
+  return hash;
+};
